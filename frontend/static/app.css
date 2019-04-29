@@ -3,10 +3,11 @@
     padding: 0;
 }
 .grid{
+    display:grid;
     background-color: bisque;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "col1 col2 col3";
+    grid-template-areas: ". col1 col2 col3 .";
     grid-gap: 20px;
 }
 .col1{
@@ -24,6 +25,7 @@
 @media screen and(min-width:736px)
 {
     .grid{
+        display:grid;
         background-color: bisque;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
